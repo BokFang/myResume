@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>个人简历</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="Loading.css">
 </head>
 <body>
-  <section class="navigation">
+  <div id="welcome" class="welcome active">
+    <div class="Loading"></div>
+    <div class="Loading-word">Welcome</div>
+  </div>
+  <section class="top">
     <div class="title-logo">
       <a href="#"><span class="RS">RS</span><span class="card">card</span></a>
     </div>
-    <nav class="dao-hang">
+    <nav class="navigation">
       <ul class="list clearfix">
-        <li><a herf="#">OTHER</a></li>
+        <li><a href="#">TOP</a></li>
         <li><a href="#">BLOG</a></li>
         <li><a href="#">EXPERIENCE</a></li>
         <li><a href="#">SKILLS</a></li>
@@ -23,9 +28,9 @@
     </nav>
   </section>
   <div class="background-image"></div>
-  <div class="main1">
+  <div class="main">
     <div class="usercard clearfix">
-      <div class="photo clearfix"><img src="头像.jpg" class="profile-photo"></div>
+      <div class="photo clearfix"><img src="./imgs/头像.jpg" class="profile-photo"></div>
       <div class="HELLO clearfix">HELLO<div class="triangle"></div></div>
       <div class="introduction">
         <span class="I-am">I'm</span>
@@ -43,15 +48,15 @@
           <dt>E-mail</dt>
           <dd>1092554430@qq.com</dd>
           <dt>Phone</dt>
-          <dd>13570204926</dd>
+          <dd>135xxxx6666</dd>
         </dl>
       </div>
     </div>
     <nav class="long-nav">
-        <a href="#" ><img src="github.png" class="social-logo"></a>
-        <a href="#" ><img src="微博.png" class="social-logo"></a>
-        <a href="#" ><img src="知乎.png" class="social-logo"></a>
-        <a href="#" ><img src="简书.png" class="social-logo"></a>
+      <span class="logo-warpper"><a href="https://github.com/BokFang" ><img src="./imgs/github.png" class="social-logo"></a></span>
+      <span class="logo-warpper"><a href="https://www.jianshu.com/u/1d9cb46168e1" ><img src="./imgs/简书.png" class="social-logo"></a></span>
+      <span class="logo-warpper"><a href="https://weibo.com/" ><img src="./imgs/微博.png" class="social-logo"></a></span>
+      <span class="logo-warpper"><a href="https://www.zhihu.com" ><img src="./imgs/知乎.png" class="social-logo"></a></span>
     </nav>
   <div class="Download"><a href="#" class="DR">DOWNLOAD  RESUME</a></div>
   <div class="sentence">Hello! I’m BokFang. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</div>
@@ -59,22 +64,22 @@
   <div class="ability clearfix">
     <ul class="clearfix">
       <li class="skill ">
-        <p>HTML & CSS</p><div class="LevelBar"><div class="Level"></div></div>
+        <p>HTML & CSS</p><div class="LevelBar"><div class="Level HCLevel"></div></div>
       </li>
       <li class="skill">
-        <p>JavaScript</p><div class="LevelBar clearfix"><div class="Level"></div></div>
+        <p>JavaScript</p><div class="LevelBar clearfix"><div class="Level JSLevel"></div></div>
       </li>
       <li class="skill">
-        <p>jQuery</p><div class="LevelBar clearfix"><div class="Level"></div></div>
+        <p>jQuery</p><div class="LevelBar clearfix"><div class="Level jqLevel"></div></div>
       </li>
       <li class="skill">
-        <p>React.js</p><div class="LevelBar clearfix"><div class="Level"></div></div>
+        <p>React.js</p><div class="LevelBar clearfix"><div class="Level RLevel"></div></div>
       </li>
       <li class="skill">
-        <p>Vue.js</p><div class="LevelBar clearfix"><div class="Level"></div></div>
+        <p>Vue.js</p><div class="LevelBar clearfix"><div class="Level VueLevel"></div></div>
       </li>
       <li class="skill">
-        <p>Node.js</p><div class="LevelBar clearfix"><div class="Level"></div></div>
+        <p>Node.js</p><div class="LevelBar clearfix"><div class="Level nodeLevel"></div></div>
       </li>
     </ul>
 </div>
@@ -86,8 +91,11 @@
     <span>Frame</span>
   </div>
   <div class="Portfolio-Bar"><div class="PB"></div></div>
-  <div class="P-photo1"><img src="chair.jpg" class="chair"></div>
-  <div class="P-photo2"><img src="watch.jpg" class="watch"><img src="keyboard.jpg" class="keyboard"></div>
+  <div class="P-photo1"><img src="./imgs/chair.jpg" class="chair"></div>
+  <div class="P-photo2"><img src="./imgs/watch.jpg" class="watch"><img src="./imgs/keyboard.jpg" class="keyboard"></div>
 </section>
+<script>
+  welcome.classList.remove('active')
+</script>
 </body>
 </html>
