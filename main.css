@@ -26,10 +26,21 @@ a{
 text-decoration: none;
 }
 .top{
-  padding-top: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 20px;
+  padding-left: 6.4rem;
+  padding-right: 6.575rem;
+  padding-top: 1.275rem;
+  position: fixed;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: all 0.8s;
+}
+.top-active{
+  background-color:white;
+  padding-top: 0.675rem;
+  padding-bottom: 0.725rem;
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
 }
 .RS{
   color: rgb(232,103,107 );
@@ -42,25 +53,42 @@ text-decoration: none;
 .title-logo{
   font-family: 'Fredoka One';
   font-size: 1.875rem;
-  float:left;
 }
-.list li{
-  float: right;
-  list-style: none;
-  font-size: .8125rem;
-  margin-block-start: 1em;
-  margin-block-end: 0em;
-  margin-inline-start: 1em;
-  margin-inline-end: 0em;
+.navigation{
   padding-right: 20px;
+  font-size: .8125rem;
+  padding-top: .625rem;
 }
-.list li a{
+.list > li{
+  list-style: none;
+  display: inline;
+  margin-left: 1.0625rem;
+  margin-right: 1.0625rem;
+  position: relative;
+}
+.list > li > a{
   font-family: 'Open Sans';
   color: rgb(204, 202, 203);
-  padding-bottom: 3px;
 }
-.list li a:hover{
-  border-bottom:solid rgb(232,103,107 );
+.list > li > a:hover::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top:100%;
+  left: 0;
+  width: 100%;
+  background-color: rgb(232,103,107 );
+  height: 3px;
+  border-radius: 3px;
+  animation: nav-slide .3s;
+}
+@keyframes nav-slide{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
 }
 .background-image{
   z-index: -1;
@@ -74,10 +102,11 @@ text-decoration: none;
   filter:brightness(33%);
 }
 .main{
-  padding-top: 5.9em;
+  padding-top: 10.625rem;
   width: 930px;
   height: 438px;
-  margin:0 auto; 
+  margin: 0 auto;
+  transition: all 1s;
 }
 .usercard{
   margin:0 auto; 
@@ -163,8 +192,8 @@ text-decoration: none;
   text-align: center;
 }
 .logo-warpper{
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 65px;
+  margin-right: 65px;
 }
 .social-logo{
   width:30px;

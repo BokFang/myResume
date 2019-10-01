@@ -9,21 +9,21 @@
   <link rel="stylesheet" href="Loading.css">
 </head>
 <body>
-  <div id="welcome" class="welcome active">
+  <div id="welcome" class="welcome active hide">
     <div class="Loading"></div>
     <div class="Loading-word">Welcome</div>
   </div>
-  <section class="top">
+  <section class="top" id="topNav">
     <div class="title-logo">
       <a href="#"><span class="RS">RS</span><span class="card">card</span></a>
     </div>
     <nav class="navigation">
-      <ul class="list clearfix">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">EXPERIENCE</a></li>
-        <li><a href="#">SKILLS</a></li>
+      <ul class="list">
         <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#">EXPERIENCE</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">TOP</a></li>
       </ul>
     </nav>
   </section>
@@ -94,8 +94,7 @@
   <div class="P-photo1"><img src="./imgs/chair.jpg" class="chair"></div>
   <div class="P-photo2"><img src="./imgs/watch.jpg" class="watch"><img src="./imgs/keyboard.jpg" class="keyboard"></div>
 </section>
-<script>
-  welcome.classList.remove('active')
-</script>
+<script src="Loading.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
