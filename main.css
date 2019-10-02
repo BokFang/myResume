@@ -41,6 +41,7 @@ text-decoration: none;
   padding-top: 0.675rem;
   padding-bottom: 0.725rem;
   box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
+  z-index: 5;
 }
 .RS{
   color: rgb(232,103,107 );
