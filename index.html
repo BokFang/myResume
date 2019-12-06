@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>个人简历</title>
+  <link rel="stylesheet" href="./Swiper/node_modules/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="Loading.css">
 </head>
@@ -19,17 +20,17 @@
     </div>
     <nav class="navigation">
       <ul class="list">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SKILLS</a></li>
-        <li><a href="#">EXPERIENCE</a></li>
-        <li><a href="#">BLOG</a></li>
+        <li><a href="#about" >ABOUT</a></li>
+        <li><a href="#skills" >SKILLS</a></li>
+        <li><a href="#Portfolio" >PROTFOLIO</a></li>
+        <li><a href="https://github.com/BokFang">BLOG</a></li>
         <li><a href="#">TOP</a></li>
       </ul>
     </nav>
   </section>
   <div class="background-image"></div>
   <div class="main">
-    <div class="usercard clearfix">
+    <div class="usercard clearfix" id="about">
       <div class="photo clearfix"><img src="./imgs/头像.jpg" class="profile-photo"></div>
       <div class="HELLO clearfix">HELLO<div class="triangle"></div></div>
       <div class="introduction">
@@ -51,19 +52,20 @@
           <dd>135xxxx6666</dd>
         </dl>
       </div>
+      <nav class="long-nav">
+        <span class="logo-warpper"><a href="https://github.com/BokFang" ><img src="./imgs/github.png" class="social-logo"></a></span>
+        <span class="logo-warpper"><a href="https://www.jianshu.com/u/1d9cb46168e1" ><img src="./imgs/简书.png" class="social-logo"></a></span>
+        <span class="logo-warpper"><a href="https://weibo.com/" ><img src="./imgs/微博.png" class="social-logo"></a></span>
+        <span class="logo-warpper"><a href="https://www.zhihu.com" ><img src="./imgs/知乎.png" class="social-logo"></a></span>
+      </nav>
     </div>
-    <nav class="long-nav">
-      <span class="logo-warpper"><a href="https://github.com/BokFang" ><img src="./imgs/github.png" class="social-logo"></a></span>
-      <span class="logo-warpper"><a href="https://www.jianshu.com/u/1d9cb46168e1" ><img src="./imgs/简书.png" class="social-logo"></a></span>
-      <span class="logo-warpper"><a href="https://weibo.com/" ><img src="./imgs/微博.png" class="social-logo"></a></span>
-      <span class="logo-warpper"><a href="https://www.zhihu.com" ><img src="./imgs/知乎.png" class="social-logo"></a></span>
-    </nav>
+  </div>
   <div class="Download"><a href="#" class="DR">DOWNLOAD  RESUME</a></div>
   <div class="sentence">Hello! I’m BokFang. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</div>
-  <h1 class="title">Professional Skills</h1>
-  <div class="ability clearfix">
+  <h1 class="title" id="skills">Professional Skills</h1>
+  <div class="skill-show clearfix">
     <ul class="clearfix">
-      <li class="skill ">
+      <li class="skill">
         <p>HTML & CSS</p><div class="LevelBar"><div class="Level HCLevel"></div></div>
       </li>
       <li class="skill">
@@ -83,18 +85,26 @@
       </li>
     </ul>
 </div>
-<section class="Portfolio">
-  <h1 class="Portfolio-top">Portfolio</h1>
-  <div class="Portfolio-options">
-    <span>All</span>
-    <span class="Origin">Origin</span>
-    <span>Frame</span>
+<div class="Portfolio " id="Portfolio">
+  <h1 class="title">Portfolio</h1>
+  <div class="swiper-container" id="experience">
+    <div class="swiper-wrapper">
+      <img src="./imgs/apple-style-slides.jpg" alt="" class="swiper-slide">
+      <img src="./imgs/canvas.jpg" alt="" class="swiper-slide">
+      <img src="./imgs/nav-page.jpg" alt="" class="swiper-slide">
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-  <div class="Portfolio-Bar"><div class="PB"></div></div>
-  <div class="P-photo1"><img src="./imgs/chair.jpg" class="chair"></div>
-  <div class="P-photo2"><img src="./imgs/watch.jpg" class="watch"><img src="./imgs/keyboard.jpg" class="keyboard"></div>
-</section>
+
+</div>
+
 <script src="Loading.js"></script>
 <script src="main.js"></script>
+<script src="./Swiper/node_modules/swiper/js/swiper.min.js"></script>
+<script src="Swiper-open.js"></script>
 </body>
 </html>
