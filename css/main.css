@@ -7,15 +7,15 @@ body{
 }
 @font-face{
   font-family: 'Fredoka One';
-  src:url('./fonts/FredokaOne-Regular.ttf');
+  src:url('../fonts/FredokaOne-Regular.ttf');
 }
 @font-face{
   font-family: 'Open Sans';
-  src:url('./fonts/Open Sans Bold.ttf');
+  src:url('../fonts/Open\ Sans\ Bold.ttf');
 }
 @font-face{
   font-family: 'OpenSans Light';
-  src: url('./fonts/OpenSans-Light.ttf');
+  src: url('../fonts/OpenSans-Light.ttf');
 }
 .clearfix::after{
   content:"";
@@ -73,7 +73,7 @@ a{
   color: rgb(204, 202, 203);
   cursor: pointer;
 }
-.list > li > a:hover::after{
+.list > li > :hover::after,.active::after{
   content: '';
   display: block;
   position: absolute;
@@ -83,7 +83,7 @@ a{
   background-color: rgb(232,103,107 );
   height: 3px;
   border-radius: 3px;
-  animation: nav-slide .3s;
+  animation: nav-slide .4s;
 }
 @keyframes nav-slide{
   0%{
@@ -100,7 +100,7 @@ a{
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url('./imgs/background.jpg');
+  background-image: url('../imgs/background.jpg');
   background-size: cover;
   height: 32.25rem;
   filter:brightness(33%);
@@ -242,6 +242,7 @@ a{
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.52);
   margin: 0 auto;
   width: 930px;
+  padding: 30px 0;
 }
 .skill-show > ul{
   padding: 1.375rem 0;
@@ -289,8 +290,7 @@ p{
   width: 31%;
 }
 .swiper-container{
-  margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   width: 468px;
   height: 351px;
 }

@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>个人简历</title>
   <link rel="stylesheet" href="./Swiper/node_modules/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="Loading.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/Loading.css">
 </head>
 <body>
+
   <div id="welcome" class="welcome active hide">
     <div class="Loading"></div>
     <div class="Loading-word">Welcome</div>
@@ -20,7 +21,7 @@
     </div>
     <nav class="navigation">
       <ul class="list">
-        <li><a href="#about" >ABOUT</a></li>
+        <li><a href="#main" >ABOUT</a></li>
         <li><a href="#skills" >SKILLS</a></li>
         <li><a href="#Portfolio" >PROTFOLIO</a></li>
         <li><a href="https://github.com/BokFang">BLOG</a></li>
@@ -30,7 +31,7 @@
   </section>
   <div class="background-image"></div>
   <div class="main">
-    <div class="usercard clearfix" id="about">
+    <div nav class="usercard clearfix" id="main">
       <div class="photo clearfix"><img src="./imgs/头像.jpg" class="profile-photo"></div>
       <div class="HELLO clearfix">HELLO<div class="triangle"></div></div>
       <div class="introduction">
@@ -59,12 +60,12 @@
         <span class="logo-warpper"><a href="https://www.zhihu.com" ><img src="./imgs/知乎.png" class="social-logo"></a></span>
       </nav>
     </div>
+    <div class="Download"><a href="#" class="DR">DOWNLOAD  RESUME</a></div>
+    <div class="sentence">Hello! I’m BokFang. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</div>
   </div>
-  <div class="Download"><a href="#" class="DR">DOWNLOAD  RESUME</a></div>
-  <div class="sentence">Hello! I’m BokFang. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</div>
-  <h1 class="title" id="skills">Professional Skills</h1>
-  <div class="skill-show clearfix">
-    <ul class="clearfix">
+  <div nav class="Professional-Skill sclearfix"id="skills">
+      <h1 class="title" >Professional Skills</h1>
+    <ul class="skill-show clearfix">
       <li class="skill">
         <p>HTML & CSS</p><div class="LevelBar"><div class="Level HCLevel"></div></div>
       </li>
@@ -85,7 +86,7 @@
       </li>
     </ul>
 </div>
-<div class="Portfolio " id="Portfolio">
+<div nav class="Portfolio " id="Portfolio">
   <h1 class="title">Portfolio</h1>
   <div class="swiper-container" id="experience">
     <div class="swiper-wrapper">
@@ -102,9 +103,11 @@
 
 </div>
 
-<script src="Loading.js"></script>
-<script src="main.js"></script>
+<script src="./js/Loading.js"></script>
+<script src="./js/nav-float.js"></script>
+<script src="./js/auto-slide-up.js"></script>
+<script src="./js/nav-anchor.js"></script>
 <script src="./Swiper/node_modules/swiper/js/swiper.min.js"></script>
-<script src="Swiper-open.js"></script>
+<script src="./js/Swiper-open.js"></script>
 </body>
 </html>
