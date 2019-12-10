@@ -9,7 +9,7 @@
     },
     bindEvents:function(){
       let aTags = view.querySelectorAll('nav.navigation > ul > li > a')
-      for(let i = 0;i < aTags.length-2;i++){
+      for(let i = 0;i < aTags.length-1;i++){
         aTags[i].addEventListener('click',
           (x)=>{
             x.preventDefault()

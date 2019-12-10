@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./Swiper/node_modules/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/Loading.css">
+  <link rel="stylesheet" href="./css/Message.css">
 </head>
 <body>
 
@@ -24,8 +25,8 @@
         <li><a href="#main" >ABOUT</a></li>
         <li><a href="#skills" >SKILLS</a></li>
         <li><a href="#Portfolio" >PROTFOLIO</a></li>
+        <li><a href="#Comments">COMMENTS</a></li>
         <li><a href="https://github.com/BokFang">BLOG</a></li>
-        <li><a href="#">TOP</a></li>
       </ul>
     </nav>
   </section>
@@ -102,12 +103,22 @@
   </div>
 
 </div>
-
+<section nav class="Comments" id="Comments">
+  <h2 class="title">Comments</h2>
+  <form id="messageForm" class="messageForm">
+      <textarea name="content" id="messageInput" class="message-input" cols="30" rows="5"></textarea>
+      <input type="submit" value="post" class="message-button">
+    </form>
+  <ul id="messageList" class="messageList">
+  </ul>
+</section>
 <script src="./js/Loading.js"></script>
 <script src="./js/nav-float.js"></script>
 <script src="./js/auto-slide-up.js"></script>
 <script src="./js/nav-anchor.js"></script>
 <script src="./Swiper/node_modules/swiper/js/swiper.min.js"></script>
 <script src="./js/Swiper-open.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.0.1/dist/av-min.js"></script>
+<script src="./js/Message.js"></script>
 </body>
 </html>
